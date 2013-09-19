@@ -1,0 +1,9 @@
+.rvmrc
+doc
+.yardoc
+pkg
+Gemfile.lock
+.bundle/
+bin/
+coverage/
+gemfiles/*.lock

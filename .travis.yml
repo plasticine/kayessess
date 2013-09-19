@@ -1,0 +1,17 @@
+language: ruby
+bundler_args: --binstubs
+rvm:
+  - 2.0.0
+  - 1.9.3
+gemfile:
+  - gemfiles/rails3.0.x.gemfile
+  - gemfiles/rails3.1.x.gemfile
+  - gemfiles/rails3.2.x.gemfile
+  - gemfiles/rails4.0.x.gemfile
+after_success:
+  - script/quality
+matrix:
+  include:
+    - rvm:      2.0.0
+      gemfile:  gemfiles/rails4.0.x.gemfile
+      env:      COVERAGE=true

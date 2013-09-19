@@ -1,0 +1,6 @@
+#!/bin/sh -xe
+
+bundle --binstubs | grep -v '^Using'
+
+bin/rake "spec:appraisal:cleanup"
+bin/rake "spec:appraisal:install"
