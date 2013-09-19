@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rails', '>= 3.0.0'
   s.add_dependency 'kss'
+  s.add_dependency 'bourbon'
 
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rake'

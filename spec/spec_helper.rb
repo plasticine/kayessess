@@ -7,7 +7,6 @@ end
 
 require 'bundler/setup'
 require 'combustion'
-require 'shoulda-matchers'
 require 'rails'
 require 'kayessess'
 
