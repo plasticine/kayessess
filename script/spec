@@ -4,7 +4,7 @@ script/bootstrap
 
 rm -rf coverage/
 
-if [[ $TRAVIS || $APPRAILSAL ]]; then
+if [[ $TRAVIS || $CI ]]; then
   bin/rake spec:appraisal:rails3.0.x spec:unit
   bin/rake spec:appraisal:rails3.1.x spec:unit
   bin/rake spec:appraisal:rails3.2.x spec:unit
