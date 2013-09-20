@@ -8,7 +8,7 @@ end
 require 'bundler/setup'
 require 'combustion'
 require 'rails'
-require 'kayessess'
+# require 'kayessess'
 
 Combustion.initialize! :action_controller, :action_view
 
